@@ -1,4 +1,5 @@
 # functional-ES6
+Learning Functional Programming with JavaScript ES6+ on Linkedin learning/Lynda.com
 
 ##eslint immutable plugin 
 - `npm install --save-dev eslint`
