@@ -15,7 +15,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-      'immutable',
+      // 'immutable',
   ],
   rules: {
       'immutable/no-mutation': 2,

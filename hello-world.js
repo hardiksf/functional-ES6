@@ -96,3 +96,28 @@ const secondArgumentIsNotZero = func =>
 const divideSafe = secondArgumentIsNotZero(divide);
 console.log(divideSafe(4, 0));
 console.log(divideSafe(4, 3));
+
+// currying
+const myAddFunction = (x, y, z) => x + y + z;
+console.log(myAddFunction(5, 6, 7));
+
+const addPartial = x =>
+    (y, z) =>
+        myAddFunction(x, y, z);
+
+const add5 = addPartial(5);
+console.log(add5(6, 7));
+
+const addPartial2 = x =>
+    y =>
+        z => myAddFunction(x, y, z);
+
+console.log(addPartial2(5)(6)(7));
+
+// recursion
+const countDown = x => {
+    if (x < 0) return;
+    console.log(x);
+    countDown(x - 1);
+};
+countDown(5);
