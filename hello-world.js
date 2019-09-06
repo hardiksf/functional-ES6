@@ -121,3 +121,7 @@ const countDown = x => {
     countDown(x - 1);
 };
 countDown(5);
+
+// bind
+const add1 = myAddFunction.bind(null, 1);
+console.log(add1(2, 3));
